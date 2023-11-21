@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  width: 1000px;
+}
+
+.intro-section h1 {
+  display: flex;
+  justify-content: left;
+  font-family: "Koulen", sans-serif;
+  text-transform: uppercase;
+  font-size: 4vw;
+  line-height: 100px;
+}
+
+.textbox {
+  display: flex;
+  justify-content: left;
+}
