@@ -14,30 +14,115 @@
     />
   </head>
   <body>
-    <div class="my-toolbar">
-      <div class="left">
+    <nav class="nav-bar">
+      <div class="logo">
         <a href="homepage.html">Mimmi Virtanen</a>
       </div>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a class="current-page">My work</a>
+        </li>
+        <li class="nav-item">
+          <a href="fun.html">For fun</a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html">About me</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+
+    <div class="project-header">
+      <div class="left">
+        <img src="bild_twist_2.png" alt="Projekt header" />
+      </div>
       <div class="right">
-        <a class="current-page">My work</a>
-        <a href="fun.html">For fun</a>
-        <a href="about.html">About me</a>
-        <a href="contact.html">Contact</a>
+        <h3>Year</h3> 
+        <p>2023</p>
       </div>
     </div>
 
-    <div class="project-header">
-      <img src="bild_mockup_1.png" alt="Projekt header" />
+    <div class="row">
+      <div class="column">
+      </div>
+      <div class="column">
+        <h3>Year</h3>
+        <p>2023</p>
+      </div>
+      <div class="column">
+        <h3>Role</h3>
+        <p>UX, UI, ..</p>
+      </div>
+      <div class="column">
+        <h3>Tools</h3>
+        <p>Figma, Illustrator, Luma AI</p>
+      </div>
     </div>
-    <div class="intro-section">
-      <h1>Project 1</h1>
+    <div class="row">
+      <div class="column">
+        <h2>Twist</h2>
+        <p>Your digital fitting room</p>
+      </div>
     </div>
-    <div class="textbox">
-      <h3>An app ...</h3>
-      <p>The aim for this project was to...</p>
+
+    <div class="project-container">
+      <div class="project">
+        <div class="left">
+          <h2>About the project</h2>
+          <p class="project-description">Did you know that in Sweden 200 tons of textiles get burned every day?</p>
+        </div>
+        <div class="right">
+          <img src="bild_emilia.jpg">
+        </div>
+      </div>
+      <div class="project">
+        <div class="left">
+          <h2>Brief and idea</h2>
+          <p class="project-description">Beskriv briefen. Sedan: I chose to focus on how the clothing industry affects the climate. This led me to think about second-hand, reuse, and fast fashion. In my research, two points caught my attention: the first is that people order clothes online, often in multiple sizes of the same item, and then return them. It is cheaper for companies to discard returned items than to sell them again. Secondly, I realized that many find it complicated to shop for second-hand clothes online.</p>
+        </div>
+        <div class="right">
+          <img src="bild_twist_mood.png">
+        </div>
+      </div>
+      <div class="project">
+        <div class="left">
+          <h2>Process</h2>
+          <p class="project-description">Och här kommer text om processen. Kanske något om att skapa design system, iterera, skapa grey boxes, jobba i olika program.</p>
+        </div>
+        <div class="right">
+          <img src="bild_twist_style.png">
+        </div>
+      </div>
+      <div class="project">
+        <div class="left">
+          <h2>Working with AI</h2>
+          <p class="project-description">Och här kommer text om hur det var att jobba med AI i projektet</p>
+        </div>
+        <div class="right">
+          <img src="bild_twist_style.png">
+        </div>
+      </div>
     </div>
+
     <div class="footer">
       <div class="line"></div>
       <p>Mimmi Virtanen</p>
   </body>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+    hamburger.addEventListener("click", mobileMenu);
+    function mobileMenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+  </script>
 </html>

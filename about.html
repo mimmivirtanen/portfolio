@@ -14,17 +14,30 @@
     />
   </head>
   <body>
-    <div class="my-toolbar">
-      <div class="left">
+    <nav class="nav-bar">
+      <div class="logo">
         <a href="homepage.html">Mimmi Virtanen</a>
       </div>
-      <div class="right">
-        <a href="homepage.html">My work</a>
-        <a href="fun.html">For fun</a>
-        <a class="current-page">About me</a>
-        <a href="contact.html">Contact</a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="homepage.html">My work</a>
+        </li>
+        <li class="nav-item">
+          <a href="fun.html">For fun</a>
+        </li>
+        <li class="nav-item">
+          <a class="current-page">About me</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
-    </div>
+    </nav>
     <div class="intro-section">
       <h1>About</h1>
     </div>
@@ -44,4 +57,14 @@
       <div class="line"></div>
       <p>Mimmi Virtanen</p>
   </body>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+    hamburger.addEventListener("click", mobileMenu);
+    function mobileMenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+  </script>
 </html>

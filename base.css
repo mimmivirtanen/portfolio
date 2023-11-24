@@ -35,6 +35,10 @@ p {
   color: #ffffff;
 }
 
+li {
+  list-style: none;
+}
+
 a {
   color: #7bbbeb;
   font-family: "Roboto", sans-serif;
@@ -47,7 +51,6 @@ a {
 a:hover {
   color: #c9e4f5;
   transition: all 400ms linear;
-  transform: scaleX(1.1) translateX(10px); /*Ta bort denna? Syns den?*/
 }
 
 .card-container a {
@@ -56,7 +59,7 @@ a:hover {
   color: #ffffff;
 }
 
-.my-toolbar {
+.nav-bar {
   display: flex;
   justify-content: space-between;
   background-color: #000000;
@@ -68,9 +71,39 @@ a:hover {
   margin-bottom: 20px;
 }
 
-.my-toolbar a {
+.nav-bar a {
   padding-left: 30px;
   padding-right: 30px;
+}
+
+/* Hamburger meny */
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #7bbbeb;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
+  margin: 0px;
 }
 
 .current-page {
@@ -112,20 +145,62 @@ a:hover {
   margin: 0 -32px;
 }
 
-@media screen and (max-widht: 992px) {
+@media only screen and (max-width: 992px) {
   h1 {
     font-size: 2rem;
   }
   .card-container {
-    flex-direction: row;
+    flex-direction: column !important;
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-menu a {
+    margin: 2.5rem 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-item {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 }
-@media screen and (max-widht: 600px) {
+@media only screen and (max-width: 600px) {
   h1 {
     font-size: 1rem;
   }
   .card-container {
-    flex-direction: row;
+    flex-direction: column !important;
   }
 }
 

@@ -14,17 +14,30 @@
     />
   </head>
   <body>
-    <div class="my-toolbar">
-      <div class="left">
+    <nav class="nav-bar">
+      <div class="logo">
         <a href="homepage.html">Mimmi Virtanen</a>
       </div>
-      <div class="right">
-        <a class="current-page">My work</a>
-        <a href="fun.html">For fun</a>
-        <a href="about.html">About me</a>
-        <a href="contact.html">Contact</a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a class="current-page">My work</a>
+        </li>
+        <li class="nav-item">
+          <a href="fun.html">For fun</a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html">About me</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
-    </div>
+    </nav>
     <main class="container">
       <div class="intro-section">
         <h1>Mimmi Virtanen</h1>
@@ -43,7 +56,7 @@
         <div class="card">
           <img src="bild_emilia.jpg" alt="Foto 2" />
           <div class="textbox">
-            <a href="project1.html">Ett annat projekt</a>
+            <a href="project1.html">Stagerprojekt</a>
           </div>
         </div>
       </div>
@@ -52,13 +65,13 @@
         <div class="card">
           <img src="bild_hopp.JPG" alt="Foto 3" />
           <div class="textbox">
-            <a href="project1.html">Ett tredje projekt</a>
+            <a href="project1.html">ProTech</a>
           </div>
         </div>
         <div class="card">
           <img src="bild_emilia.jpg" alt="Foto 4" />
           <div class="textbox">
-            <a href="project1.html">Ett fjärde projekt</a>
+            <a href="project1.html">Infographics</a>
           </div>
         </div>
       </div>
@@ -68,7 +81,14 @@
       <p>Mimmi Virtanen</p>
     </div>
   </body>
+
   <script>
-    console.log("hello world");
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+    hamburger.addEventListener("click", mobileMenu);
+    function mobileMenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
   </script>
 </html>
