@@ -6,7 +6,7 @@
 
 .hero {
   height: 100vh;
-  background-image: url(bild_fest.JPG); /*Hero-bild*/
+  background-image: url(../images/bild_fest.JPG); /*Hero-bild*/
   background-size: cover;
   background-position: center;
 }

@@ -1,6 +1,6 @@
 .hero {
   height: 100vh;
-  background-image: url(bild_emilia.jpg); /*Hero-bild*/
+  background-image: url(../images/bild_emilia.jpg); /*Hero-bild*/
   background-size: cover;
   background-position: center;
 }

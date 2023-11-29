@@ -6,7 +6,7 @@
 
 .effect-image {
   margin-top: 48px;
-  background-image: url(bild_smoke.png);
+  background-image: url(../images/bild_smoke.png);
   background-size: cover;
   height: 120vh;
 }

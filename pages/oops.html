@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="sv">
   <head>
-    <link rel="stylesheet" href="base.css" />
-    <link rel="stylesheet" href="oops.css" />
+    <link rel="stylesheet" href="../asssets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/oops.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mimmi Virtanen</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Koulen&family=Roboto:wght@400;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Prosto+One&family=Roboto:wght@400;900&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -19,7 +19,7 @@
       <div class="hero">
         <nav class="nav-bar">
           <div class="logo">
-            <a href="homepage.html">Mimmi Virtanen</a>
+            <a href="../homepage.html">Mimmi Virtanen</a>
           </div>
           <ul class="nav-menu">
             <li class="nav-item">
@@ -52,29 +52,30 @@
     </header>
 
     <div class="footer">
-        <div class="line"></div>
-        <div class="left">
-          <h1>Let's talk</h1>
-          <h2>virtanenmimmi@gmail.com</h2>
-          <div class="icons">
-            <a href="https://www.instagram.com/mimmivir.jpg/"
-              ><img src="icon_insta.png" alt="Instagram link"
-            /></a>
-            <a href="https://www.linkedin.com/in/mimmi-virtanen-407606170/"
-              ><img src="icon_linkedin.png" alt="linkedin link"
-            /></a>
-          </div>
+      <div class="line"></div>
+      <div class="left">
+        <h1>Let's talk</h1>
+        <h2>virtanenmimmi@gmail.com</h2>
+        <div class="icons">
+          <a href="https://www.instagram.com/mimmivir.jpg/"
+            ><img src="../assets/images/icon_insta.png" alt="Instagram link"
+          /></a>
+          <a href="https://www.linkedin.com/in/mimmi-virtanen-407606170/"
+            ><img src="../assets/images/icon_linkedin.png" alt="linkedin link"
+          /></a>
+        </div>
       </div>
-    </body>
-  
-    <script>
-      // https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci
-      const hamburger = document.querySelector(".hamburger");
-      const navMenu = document.querySelector(".nav-menu");
-      hamburger.addEventListener("click", mobileMenu);
-      function mobileMenu() {
-        hamburger.classList.toggle("active");
-        navMenu.classList.toggle("active");
-      }
-    </script>
-  </html>
+    </div>
+  </body>
+
+  <script>
+    // https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+    hamburger.addEventListener("click", mobileMenu);
+    function mobileMenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+  </script>
+</html>
