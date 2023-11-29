@@ -2,10 +2,18 @@
   box-sizing: border-box;
 }
 
+h3 {
+  padding: 24px;
+}
+
 .intro-section {
-  text-align: left; /* den här sätter text-align på Titeln Mimmi */
+  text-align: center; /* den här sätter text-align på titeln */
   margin-top: 200px;
   margin-bottom: 200px;
+}
+
+.project-title {
+  text-align: center;
 }
 
 img {
@@ -17,7 +25,7 @@ img {
 .container {
   max-width: 100%;
   background-color: #000000;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
 }
 
 .card-container {
@@ -29,11 +37,24 @@ img {
   padding-bottom: 24px;
 }
 
-.card-container :hover {
+/* Vill ej ha hover effect om de ej är klickbara.
+  .card-container :hover {
   border-radius: 8%;
   transition: all 1s ease-in-out;
-}
+} */
 
 .textbox {
   padding: 5px;
+}
+
+/* Alejandro-videon */
+
+.pepp-link {
+  border: 1px solid;
+  color: #7bbbeb;
+  border-radius: 32px;
+  padding: 24px;
+  max-width: 50vh;
+  text-align: center;
+  margin: 16px;
 }

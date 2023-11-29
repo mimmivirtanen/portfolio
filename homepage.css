@@ -2,26 +2,42 @@
   box-sizing: border-box;
 }
 
+/*Om jag vill ha video som hero: https://www.gumlet.com/learn/how-to-autoplay-html-video/ */
+
+.hero {
+  height: 100vh;
+  background-image: url(bild_fest.JPG); /*Hero-bild*/
+  background-size: cover;
+  background-position: center;
+}
 .intro-section {
-  text-align: left; /* den här sätter text-align på titeln Mimmi */
   margin-top: 250px;
   margin-bottom: 250px;
 }
 
+/*Styling på text, hero-bilden*/
 .intro-section h1 {
   display: flex;
-  justify-content: left;
-  font-family: "Koulen", sans-serif;
+  justify-content: center;
+  font-family: "Prosto One", sans-serif;
   text-transform: uppercase;
-  font-size: 9vw;
-  line-height: 100px;
+  font-size: 4vw;
+  line-height: 48px;
 }
 
 .skills {
   display: flex;
-  justify-content: left;
-  gap: 118px;
+  justify-content: center;
+  gap: 64px;
   text-transform: uppercase;
+}
+
+/* Text om mig */
+.what-i-do {
+  padding: 80px 48px 80px 48px;
+  display: flex;
+  justify-content: center;
+  /*text-align: center;*/
 }
 
 img {
@@ -29,10 +45,11 @@ img {
   width: 1000px;
 }
 
+/*Projektkort*/
+
 .container {
   max-width: 100%;
   background-color: #000000;
-  margin: 0 auto;
 }
 
 .card-container {
@@ -41,14 +58,10 @@ img {
   justify-content: center;
   align-items: center;
   gap: 8px;
-  padding-bottom: 24px;
+  padding-bottom: 5px;
 }
 
 .card-container :hover {
   border-radius: 8%;
   transition: all 1s ease-in-out;
-}
-
-.textbox {
-  padding: 12px 0px 10px 0px;
 }

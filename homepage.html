@@ -9,80 +9,108 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Koulen&family=Roboto:wght@400;900&display=swap"
-      rel="stylesheet"
-    />
+      href="https://fonts.googleapis.com/css2?family=Prosto+One&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
   </head>
+
   <body>
-    <nav class="nav-bar">
-      <div class="logo">
-        <a href="homepage.html">Mimmi Virtanen</a>
+    <header>
+      <div class="hero">
+        <nav class="nav-bar">
+          <div class="logo">
+            <a href="homepage.html">Mimmi Virtanen</a>
+          </div>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a class="current-page">My work</a>
+            </li>
+            <li class="nav-item">
+              <a href="fun.html">For fun</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html">About me</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+
+        <div class="intro-section">
+          <h1>Mimmi Virtanen</h1>
+          <div class="skills">
+            <h2>Digital designer</h2>
+          </div>
+        </div>
       </div>
-      <ul class="nav-menu">
-        <li class="nav-item">
-          <a class="current-page">My work</a>
-        </li>
-        <li class="nav-item">
-          <a href="fun.html">For fun</a>
-        </li>
-        <li class="nav-item">
-          <a href="about.html">About me</a>
-        </li>
-        <li class="nav-item">
-          <a href="contact.html">Contact</a>
-        </li>
-      </ul>
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </nav>
+    </header>
+
     <main class="container">
-      <div class="intro-section">
-        <h1>Mimmi Virtanen</h1>
-        <div class="skills">
-          <h2>Digital designer</h2>
+      <div class="what-i-do">
+        <h2>
+          Hey, I'm Mimmi. A digital designer and cultural producer based in
+          Gothenburg, Sweden.
+        </h2>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <a href="project1.html"
+            ><img src="bild_twist_3.png" alt="Project 1, Twist"
+          /></a>
+        </div>
+        <div class="card">
+          <a href="oops.html"
+            ><img src="bild_protech.png" alt="Project 2, ProTech"
+          /></a>
         </div>
       </div>
 
+      <div class="what-i-do">
+        <h2>I do web design, UX/UI, graphic design,
+          motion and coding. <br>But also film, photography, content creation and producing. <br> <br>Yes, I am a multitasker.</h2>
+      </div>
+    
       <div class="card-container">
         <div class="card">
-          <img src="bild.JPG" alt="Foto 1" />
-          <div class="textbox">
-            <a href="project1.html">Twist</a>
-          </div>
+          <a href="oops.html"
+            ><img src="bild_blue.png" alt="Project 3, Placeholder"
+          /></a>
         </div>
         <div class="card">
-          <img src="bild_emilia.jpg" alt="Foto 2" />
-          <div class="textbox">
-            <a href="project1.html">Stagerprojekt</a>
-          </div>
+          <a href="oops.html"
+            ><img src="bild_red.png" alt="Project 4, Placeholder"
+          /></a>
         </div>
       </div>
 
-      <div class="card-container">
-        <div class="card">
-          <img src="bild_hopp.JPG" alt="Foto 3" />
-          <div class="textbox">
-            <a href="project1.html">ProTech</a>
-          </div>
-        </div>
-        <div class="card">
-          <img src="bild_emilia.jpg" alt="Foto 4" />
-          <div class="textbox">
-            <a href="project1.html">Infographics</a>
-          </div>
-        </div>
+      <div class="what-i-do">
+        <h2><h2>And in my creations, I
+          always aim to surprise you.</h2></h2>
       </div>
     </main>
+
     <div class="footer">
       <div class="line"></div>
-      <p>Mimmi Virtanen</p>
+      <div class="left">
+        <h1>Let's talk</h1>
+        <h2>virtanenmimmi@gmail.com</h2>
+        <div class="icons">
+          <a href="https://www.instagram.com/mimmivir.jpg/"
+            ><img src="icon_insta.png" alt="Instagram link"
+          /></a>
+          <a href="https://www.linkedin.com/in/mimmi-virtanen-407606170/"
+            ><img src="icon_linkedin.png" alt="linkedin link"
+          /></a>
+        </div>
     </div>
   </body>
 
   <script>
+    // https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci
     const hamburger = document.querySelector(".hamburger");
     const navMenu = document.querySelector(".nav-menu");
     hamburger.addEventListener("click", mobileMenu);

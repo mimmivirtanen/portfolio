@@ -1,42 +1,24 @@
-* {
-  box-sizing: border-box;
-}
-
 img {
   max-width: 100%;
   width: 1000px;
 }
 
-/* För headerbild och textbox */
-.project-header {
-  padding-top: 32px;
-  display: flex;
-  height: 80vh;
-  padding-top: 32px;
-  padding-bottom: 32px;
+.intro-section {
+  text-align: center; /* den här sätter text-align på titeln */
+  margin-top: 200px;
+  margin-bottom: 170px;
 }
 
-/*För headerbild*/
-.project-header .left {
-}
-
-/*För headertext*/
-.project-header .right {
-  margin-top: 140px;
-  margin-bottom: 16px;
-  padding: 32px;
-}
-
-/*ta bort denna, behövs den?*/
 .intro-section h1 {
   display: flex;
-  justify-content: left;
-  font-family: "Koulen", sans-serif;
+  justify-content: center;
+  font-family: "Prosto One", sans-serif;
   text-transform: uppercase;
-  font-size: 4vw;
+  font-size: 8rem;
   line-height: 100px;
 }
 
+/* Raden med Year/Role/Tools */
 .textbox {
   display: flex;
   justify-content: left;
@@ -45,7 +27,7 @@ img {
 .row {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  text-align: center;
 }
 
 .column {
@@ -55,40 +37,78 @@ img {
 
 /*För text- och bildboxar*/
 .container {
-  margin: 0 6vw;
+  margin: 16px;
   max-width: 1400px;
 }
 
 .project {
   display: flex;
-  height: 80vh;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.project .left {
-  width: 40%;
-  padding-right: 45px;
 }
 
 .project .left h2 {
   font-weight: 400;
-  margin-top: 140px;
-  margin-bottom: 16px;
 }
 
 .project .left .project-description {
   font-size: 1rem;
-  margin-bottom: 32px;
-}
-
-.project .right {
-  width: 60%;
-  padding-left: 32px;
 }
 
 .project .right img {
   width: 100%;
   height: 100%;
   object-fit: contain; /*eller cover*/
+}
+
+/* Media queries */
+
+@media only screen and (min-width: 993px) {
+  .project-container {
+    padding-top: 32px;
+    padding-left: 32px;
+  }
+
+  .project {
+    height: 80vh;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
+  }
+
+  .project .left {
+    width: 40%;
+    padding-right: 45px;
+  }
+
+  .project .right {
+    width: 60%;
+    padding-left: 32px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .project-container {
+    padding: 32px;
+  }
+
+  .project {
+    flex-direction: column !important;
+    margin: 32px 0px;
+    padding: 16px 0px;
+    border-top: 1px solid #7bbbeb;
+  }
+
+  .project .left {
+    width: 100%;
+    padding: 16px 0px;
+  }
+
+  .project .right {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .project {
+    flex-direction: column !important;
+  }
 }

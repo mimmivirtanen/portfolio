@@ -1,0 +1,29 @@
+.hero {
+  height: 100vh;
+  background-image: url(bild_emilia.jpg); /*Hero-bild*/
+  background-size: cover;
+  background-position: center;
+}
+
+.intro-section {
+  margin-top: 250px;
+  margin-bottom: 250px;
+}
+
+/*Styling på text, hero-bilden*/
+.intro-section h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Prosto One", sans-serif;
+  text-transform: uppercase;
+  font-size: 4vw;
+  line-height: 48px;
+  color: black;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+  text-transform: uppercase;
+}
