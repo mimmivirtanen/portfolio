@@ -29,6 +29,10 @@
   display: flex;
   justify-content: center;
   gap: 64px;
+}
+
+.skills h2 {
+  font-size: 2vw;
   text-transform: uppercase;
 }
 
@@ -42,7 +46,6 @@
 
 img {
   max-width: 100%;
-  width: 1000px;
 }
 
 /*Projektkort*/
